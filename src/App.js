@@ -1,23 +1,29 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import User from './Components/User';
+import ClickMe from './Components/ClickMe';
+import UseState from './Components/UseState';
+import Cliker from './Components/Cliker';
+import Students from './Components/Students';
+import Studentinput from './Components/Studentinput';
+import Toggel from './Components/Toggel';
+import FormHandle from './Components/FormHandle';
 function App() {
+  
+  const [name, setName] = useState("Nikhil")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <h1>Hello World</h1> */}
+     {/* <User /> */}
+     {/* <ClickMe /> */}
+     {/* <UseState /> */}
+     {/* <Cliker /> */}
+     {/* <Students name={name} email={"test@gmail.com"}/> */}
+     {/* <button onClick={()=>{setName("Ajay")}}>Change Name</button> */}
+     {/* <Studentinput /> */}
+     {/* <Toggel /> */}
+     <FormHandle />
     </div>
   );
 }
