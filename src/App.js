@@ -9,6 +9,7 @@ import Students from './Components/Students';
 import Studentinput from './Components/Studentinput';
 import Toggel from './Components/Toggel';
 import FormHandle from './Components/FormHandle';
+import Profile from './Components/Profile';
 function App() {
   
   const [name, setName] = useState("Nikhil")
@@ -23,7 +24,8 @@ function App() {
      {/* <button onClick={()=>{setName("Ajay")}}>Change Name</button> */}
      {/* <Studentinput /> */}
      {/* <Toggel /> */}
-     <FormHandle />
+     {/* <FormHandle /> */}
+     <Profile />
     </div>
   );
 }
